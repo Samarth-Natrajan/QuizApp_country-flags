@@ -51,11 +51,20 @@
         android:textStyle="bold"
         tools:text="Username" />
 
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        tools:text="score" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/white"
         android:text="FINISH"
         android:textColor="@color/colorPrimary"

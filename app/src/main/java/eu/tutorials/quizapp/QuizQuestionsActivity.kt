@@ -24,6 +24,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var tvOptionFour:TextView? = null
     private var buttonSubmit: Button? = null
     private var name : String? = null
+
     /**
      * This function is auto created by Android when the Activity Class is created.
      */
@@ -142,10 +143,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                             setQuestion()
                         }
                         else -> {
-                            val intent = Intent(this,ResultActivity::class.java)
+                            val intent = Intent(this@QuizQuestionsActivity,ResultActivity::class.java)
                             intent.putExtra(Constants.User_NAME,name)
-                            intent.putExtra(Constants.correct,mCorrectAnswers)
-                            intent.putExtra(Constants.total,mQuestionsList!!.size)
+                            intent.putExtra(Constants.CORRECT,mCorrectAnswers)
+                            intent.putExtra(Constants.TOTAL,mQuestionsList!!.size)
                             startActivity(intent)
                             finish()
 

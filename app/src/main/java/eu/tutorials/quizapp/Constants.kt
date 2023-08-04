@@ -1,9 +1,9 @@
 package eu.tutorials.quizapp
 
 object Constants {
-    const val User_NAME :String = "name"
-    const val correct :String = "name"
-    const val total :String = "name"
+    const val User_NAME :String = "user_name"
+    const val CORRECT :String = "correct_answers"
+    const val TOTAL :String = "total_questions"
     fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>()
 
